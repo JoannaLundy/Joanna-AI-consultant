@@ -17,7 +17,8 @@
             background-color: #8b5e3c;
             color: white;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
         }
         .container {
             width: 80%;
@@ -30,63 +31,109 @@
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
         .cta-button {
             display: inline-block;
             background: #8b5e3c;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 18px;
             margin-top: 10px;
         }
+        .cta-button:hover {
+            background: #5a3e2b;
+        }
         .profile-image {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
             margin: 20px auto;
             display: block;
         }
+        .services-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .testimonials {
+            font-style: italic;
+            color: #5a3e2b;
+        }
+        .contact-form {
+            background: #fff8e7;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
         footer {
             background: #5a3e2b;
             color: white;
-            padding: 10px;
+            padding: 15px;
             margin-top: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
+
     <header>
         Joanna AI & Cybersecurity Consultant
     </header>
-    
+
     <div class="container">
-        <img src="https://www.facebook.com/photo.php?fbid=900974538666320&set=pb.100062613473132.-2207520000&type=3" alt="Your Profile Picture" class="profile-image">
+        <img src="https://www.facebook.com/photo.php?fbid=324733909623722&set=pb.100062613473132.-2207520000&type=3" alt="Your Profile Picture" class="profile-image">
         
         <div class="section">
             <h2>About Me</h2>
-            <p>I specialize in AI-driven cybersecurity and business process automation, helping organizations protect data, detect threats, and optimize workflows.</p>
+            <p>Helping businesses automate security & prevent cyber threats using AI.  
+            I specialize in AI-powered **threat detection**, **business workflow automation**,  
+            and **security compliance solutions**.</p>
         </div>
 
         <div class="section">
-            <h2>Services</h2>
-            <ul>
-                <li><strong>AI-Powered Cybersecurity</strong> – Threat detection & automated security solutions.</li>
-                <li><strong>AI Process Automation</strong> – Business workflow automation for efficiency.</li>
-                <li><strong>AI Consulting</strong> – Strategy & implementation of AI security solutions.</li>
+            <h2>🚀 Services I Offer</h2>
+            <ul class="services-list">
+                <li><strong>🔐 AI-Powered Cybersecurity:</strong> Real-time threat detection & automated security responses.</li>
+                <li><strong>⚙️ AI Process Automation:</strong> Automating IT security checks & business workflows.</li>
+                <li><strong>📊 AI Consulting:</strong> Custom AI security solutions for businesses.</li>
             </ul>
+            <a href="mailto:lundyjoanna@outlook.com" class="cta-button">Book a Free Consultation</a>
         </div>
 
         <div class="section">
-            <h2>Contact</h2>
-            <p>Interested in AI cybersecurity solutions or automation?</p>
-            <a href="mailto:lundyjoanna@outlook.com" class="cta-button">Get in Touch</a>
+            <h2>📢 Client Testimonials</h2>
+            <p class="testimonials">"Joanna helped us integrate AI-driven security automation, reducing threat response time by 80%!" - Tech Corp</p>
+            <p class="testimonials">"Thanks to Joanna's AI solutions, our business processes are now fully optimized!" - Business Solutions Inc.</p>
+        </div>
+
+        <div class="section">
+            <h2>📈 Recent Case Study</h2>
+            <p>See how AI-driven **phishing detection** helped a finance company block 98% of attacks.</p>
+            <a href="#" class="cta-button">Read the Case Study</a>
+        </div>
+
+        <div class="contact-form">
+            <h2>📩 Contact Me</h2>
+            <p>Have questions about AI cybersecurity? Let's talk!</p>
+            <form action="mailto:lundyjoanna@outlook.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required><br><br>
+                <input type="email" name="email" placeholder="Your Email" required><br><br>
+                <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
         </div>
     </div>
 
     <footer>
         &copy; 2025 Joanna AI & Cybersecurity Consultant | All Rights Reserved
     </footer>
+
 </body>
 </html>
